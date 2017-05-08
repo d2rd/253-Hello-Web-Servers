@@ -1,0 +1,14 @@
+{
+  "name": "hello-web-server",
+  "version": "0.0.1",
+  "description": "Build a [markdown][] editor app using Node.js Express.js framework.",
+  "main": "server.js",
+  "author": "Scotch",
+  "repository": "https: //github.com/d2rd/102-Web-Scraper-Node.git",
+  "license": "MIT",
+
+  "Dependencies": {
+    "express": "latest"
+
+  }
+}
