@@ -7,30 +7,41 @@ a {
   color: #00B7FF;
 }
 
+body {
+  padding: 10px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
 .flex-container {
-  display: flex;
+  display: inline-flex; // for other browsers
+  // display: -webkit-flex;  // required for safari
   flex-direction: row;
+  // flex-wrap: nowrap;
+  height: 75%;
   /* or inline-flex */
 }
 
-#flex-item-files {
-  display: -webkit-flex;
-  display: flex;
-  width: 400px;
+#flex-files {
+  width: 150px;
   height: 250px;
-  background-color: lightgrey
+  margin: 10px;
+  background-color: lightgrey;
 }
 
-#flex-item-markdown {
+#flex-markdown {
+  width: 300px;
+  height: 250px;
+  margin: 10px;
   background-color: cornflowerblue;
-  width: 100px;
-  height: 100px;
-  margin: 10px;
 }
 
-#flex-item-preview {
-  background-color: seagreen;
-  width: 100px;
-  height: 100px;
+#flex-preview {
+  width: 300px;
+  height: 250px;
   margin: 10px;
+  background-color: seagreen;
 }

@@ -8,29 +8,16 @@ html
 
   body
     block content 
-h3 Three equal columns
-p
-  | Get three equal-width columns 
-  strong starting at desktops and scaling to large desktops
-  | . On mobile devices, tablets and below, the columns will automatically stack.
-.row
-  .col-md-4 .col-md-4
-  .col-md-4 .col-md-4
-  .col-md-4 .col-md-4
-h3 Three unequal columns
-p
-  | Get three columns 
-  strong starting at desktops and scaling to large desktops
-  |  of various widths. Remember, grid columns should add up to twelve for a single horizontal block. More than that, and columns start stacking no matter the viewport.
-.row
-  .col-md-3 .col-md-3
-  .col-md-6 .col-md-6
-  .col-md-3 .col-md-3
-h3 Two columns
-p
-  | Get two columns 
-  strong starting at desktops and scaling to large desktops
-  | .
-.row
-  .col-md-8 .col-md-8
-  .col-md-4 .col-md-4
+// Latest compiled and minified CSS
+link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css', integrity='sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u', crossorigin='anonymous')
+// Optional theme
+link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css', integrity='sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp', crossorigin='anonymous')
+// App title,subtitle
+.flex-container
+  #flex-files.p-2.flex-column.align-self-start FILES
+  #flex-markdown.p-2.flex-column.align-self-start MARKDOWN
+  #flex-preview.p-2.flex-column.align-self-end PREVIEW
+
+
+// Latest compiled and minified JavaScript
+script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js', integrity='sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa', crossorigin='anonymous')
