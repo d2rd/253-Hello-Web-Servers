@@ -7,24 +7,32 @@ html
 
 <!-- Optional theme -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-    
-    
-  body
-    block content
-div class="container"
-div class="col-sm-2"
+
+<!-- App title,subtitle  -->  
+  block content 
   h2 Smackdown
   p A quick and dirty (but elegant) markdown editor
 
-    div
-    p this should be the sidebar
-    ul 
-      li File 1
-      li File 2
-      li File 3
-      li File 4
+  <body class="container-fluid">
+  <div class="flex-container">
+    <div class="d-flex flex-row">
+      <div id="flex-item-files" class="p-2 flex-column align-self-start">FILES
+        <ul>
+        <li>Groceries.md</li>
+        <li>Todos.md</li>
+        <li>ExampleFile.md</li>
+        <li>Blog.md</li>
+        <li>Draft.md</li>
+        <li>Newfile</li>
+        </ul>
+        </div>
+      <div id="flex-item-markdown" class="p-2 flex-column align-self-center">MARKDOWN</div>
+      <div id="flex-item-preview" class="p-2 flex-column align-self-end">PREVIEW</div>
+</div>
 
 
-      
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+
+
+
