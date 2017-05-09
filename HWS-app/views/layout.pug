@@ -1,7 +1,38 @@
 doctype html
 html
   head
-    title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
+    title= "#253 Hello Web Server"
+    link(rel='stylesheet', href='/css/style.css')
+    link(rel='stylesheet', href='/css/main.css')
   body
     block content
+div class="container"
+div class="col-sm-2"
+  h2 Smackdown
+  p A quick and dirty (but elegant) markdown editor
+
+    div
+    p this should be the sidebar
+    ul 
+      li 1 element
+      li 2 element
+      li 3 element
+      li 4 element
+div class="col-sm-5" 
+div class="col-sm-5"    
+.primary
+    block primary
+      p nothing
+.sidebar
+    block sidebar
+    div
+    p this should be the sidebar
+    ul 
+      li 1 element
+      li 2 element
+      li 3 element
+      li 4 element
+div class="col-sm-8"    
+.primary
+    block primary
+      p nothing
