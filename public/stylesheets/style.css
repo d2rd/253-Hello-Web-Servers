@@ -18,11 +18,18 @@ a {
   display: flex;
   width: 400px;
   height: 250px;
-  background-color: lightgrey;
+  background-color: lightgrey
 }
 
 #flex-item-markdown {
   background-color: cornflowerblue;
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+}
+
+#flex-item-preview {
+  background-color: seagreen;
   width: 100px;
   height: 100px;
   margin: 10px;
