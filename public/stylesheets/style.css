@@ -13,7 +13,7 @@ a {
   /* or inline-flex */
 }
 
-#flex-item {
+#flex-item-files {
   display: -webkit-flex;
   display: flex;
   width: 400px;
@@ -21,7 +21,7 @@ a {
   background-color: lightgrey;
 }
 
-#flex-item {
+#flex-item-markdown {
   background-color: cornflowerblue;
   width: 100px;
   height: 100px;
