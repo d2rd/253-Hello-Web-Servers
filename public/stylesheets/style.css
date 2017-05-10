@@ -1,13 +1,4 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-}
-
-a {
-  color: #00B7FF;
-}
-
-body {
   padding: 10px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
@@ -17,31 +8,43 @@ a {
 }
 
 .flex-container {
-  display: inline-flex; // for other browsers
-  // display: -webkit-flex;  // required for safari
+  display: inline-flex;
   flex-direction: row;
-  // flex-wrap: nowrap;
+  flex-wrap: nowrap;
   height: 75%;
   /* or inline-flex */
 }
 
-#flex-files {
-  width: 150px;
-  height: 250px;
+#flex-sidebar {
+  width: 200px;
+  height: 500px;
   margin: 10px;
   background-color: lightgrey;
 }
 
-#flex-markdown {
-  width: 300px;
-  height: 250px;
+#flex-editor {
+  width: 400px;
+  height: 500px;
   margin: 10px;
   background-color: cornflowerblue;
 }
 
 #flex-preview {
-  width: 300px;
-  height: 250px;
+  width: 400px;
+  height: 500px;
   margin: 10px;
   background-color: seagreen;
+}
+
+button {
+  align="right";
+  border: solid;
+}
+
+#editor-textbox {
+  text-align: center;
+}
+
+#preview-textbox {
+  text-align: center;
 }

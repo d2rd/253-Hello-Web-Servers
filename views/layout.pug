@@ -8,16 +8,46 @@ html
 
   body
     block content 
-// Latest compiled and minified CSS
-link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css', integrity='sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u', crossorigin='anonymous')
-// Optional theme
-link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css', integrity='sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp', crossorigin='anonymous')
-// App title,subtitle
-.flex-container
-  #flex-files.p-2.flex-column.align-self-start FILES
-  #flex-markdown.p-2.flex-column.align-self-start MARKDOWN
-  #flex-preview.p-2.flex-column.align-self-end PREVIEW
+
+html
+  link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css', integrity='sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u', crossorigin='anonymous')
+  link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css', integrity='sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp', crossorigin='anonymous')
+  body.container-fluid
+    .panel.panel-default
+    .panel-body
+      | HEADER 
+      button(type='button', style='float:right', onclick='Save') SAVE
+    .flex-container
+      #flex-sidebar.p-2.flex-column.align-self-start
+        .wb-panel.wb-panel-info
+          .wb-panel-heading
+            h3.wb-panel-title(align='center') SIDEBAR
+          .wb-panel-body
+            ul
+              li Groceies.md
+              li Todos.md
+              li ExampleFile.md
+              li Blog.md
+              li Draft.md
+              li Newfile
+      #flex-editor.p-2.flex-column.align-self-start
+        .wb-panel.wb-panel-info
+          .wb-panel-heading
+            h3.wb-panel-title(align='center') EDITOR
+          .wb-panel-body
+            textarea#editor-textbox(rows='4', cols='40')
+              | At w3schools.com you will learn how to make a website. We offer free tutorials in all web development technologies.
+      #flex-preview.p-2.flex-column.align-self-end
+        .wb-panel.wb-panel-info
+          .wb-panel-heading
+            h3.wb-panel-title(align='center') PREVIEW
+          .wb-panel-body
+            textarea#preview-textbox(rows='4', cols='40')
+              | At w3schools.com you will learn how to make a website. We offer free tutorials in all web development technologies.
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js', integrity='sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa', crossorigin='anonymous')
+ 
 
 
-// Latest compiled and minified JavaScript
-script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js', integrity='sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa', crossorigin='anonymous')
+      
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>

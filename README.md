@@ -25,7 +25,7 @@ Setup the repo and file structure, install and configure [Express][], and get a 
   - [x] `views/`: for storing your Pug HTML templates
   - [x] `public/`: for storing static files like CSS and images
   - [x] `README.md`: includes overview of your repo
-- [ ] Express server can be started with `$ node app.js`
+- [x] Express server can be started with `$ node app.js`
 - [ ] Server renders a page at the root route (`/`) that looks like the [mockup](#mockups) but does not have any functionality - it is just a static page
 - [ ] All package dependencies are defined in `package.json`
 - [ ] The artifact produced is properly licensed, preferably with the [MIT license][mit-license]
@@ -34,12 +34,12 @@ Setup the repo and file structure, install and configure [Express][], and get a 
 
 Build out the template structure with [Pug][] for a single-file editor. Don't worry about multiple files for now, or implementing the markdown rendering.
 
-- [ ] Pug is installed and set up for HTML templating
-- [ ] View template files are created in the `/views` subdirectory
-- [ ] Main view file is called `index`
+- [x] Pug is installed and set up for HTML templating
+- [x] View template files are created in the `/views` subdirectory
+- [x] Main view file is called `index`
 - [ ] Includes are created for the different "components" of the main view:
-  - [ ] Sidebar (shows list of files)
-  - [ ] Header (shows current filename, word count, and save button)
+  - [x] Sidebar (shows list of files)
+  - [x] Header (shows current filename, word count, and save button)
   - [ ] Editor (shows markdown editor pane)
   - [ ] Preview (shows rendered markdown)
 - [ ] CSS is organized into one or more files in the `public/` directory
@@ -49,7 +49,7 @@ Build out the template structure with [Pug][] for a single-file editor. Don't wo
 
 Setup real markdown rendering so that writing in the left panel updates the right panel, and make the "Save" button work.
 
-- [ ] Marked is installed
+- [x] Marked is installed
 - [ ] Markdown text written in the "Editor" pane is rendered in the "Preview" pane automatically
 - [ ] Preview is updated every time text in the editor changes
 - [ ] Clicking the "Save" button saves the markdown text in the editor to a file in a subdirectory of the server `data/`
