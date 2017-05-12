@@ -4,6 +4,7 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+var marked = require('marked')
 
 var index = require('./routes/index');
 var users = require('./routes/users');
@@ -42,6 +43,24 @@ app.use(function(err, req, res, next) {
   res.status(err.status || 500);
   res.render('error');
 });
+
+  // list files and folders using nodejs 
+  // Source "https://sankartypo3.wordpress.com/2013/02/12/how-to-list-files-and-folders-using-nodejs/"
+  var fs = require('fs');
+  fs.readdir('/', function (err, files) { // '/' denotes the root folder
+    if (err) throw err;
+
+    files.forEach( function (file) {
+      fs.lstat('/'+file, function(err, stats) {
+        if (!err && stats.isDirectory()) { //conditing for identifying folders
+          $('ul#foldertree').append('<li class="folder">'+file+'</li>');
+        }
+        else{
+          $('ul#foldertree').append('<li class="file">'+file+'</li>');
+        }
+      });
+    });
+  });
 
 app.listen(3000, function() {
   console.log("http://localhost:3000")
