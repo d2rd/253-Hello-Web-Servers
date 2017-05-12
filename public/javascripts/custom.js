@@ -4,3 +4,5 @@ document.getElementById('flex-markdown-input').addEventListener('keyup', functio
   document.getElementById('flex-preview').innerHTML =
        marked(markdownContent);
 })
+
+MSFileSaver
