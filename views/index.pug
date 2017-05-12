@@ -6,10 +6,8 @@ block content
   
   .flex-container
     #flex-files.p-2.flex-column.align-self-start FILES
-    form
-      ul(id='”foldertree”')
-    form
-      #flex-markdown.p-2.flex-column.align-self-start MARKDOWN
-       input#flex-markdown-input(type='text', placeholder='  Enter text here.')  
+    
+    ul(id='”foldertree”')    
+    #flex-markdown.p-2.flex-column.align-self-start MARKDOWN
+      textarea#flex-markdown-input(placeholder='  Enter text here.')  
     #flex-preview.p-2.flex-column.align-self-end PREVIEW
-
